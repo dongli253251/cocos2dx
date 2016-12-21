@@ -98,6 +98,8 @@ long long GetCurrentMSce()
 
 bool CGButton::CleareGObject()
 {
+    m_pDownSprite->release();
+    m_pNormalSprite->release();
     m_pGameScene->removeChild(m_pDownSprite);
     m_pGameScene->removeChild(m_pNormalSprite);
 
